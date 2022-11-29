@@ -61,7 +61,7 @@ void loop() {
   if (request.indexOf("/door?=1") != -1)  
   {
     Serial.println("Door=OPEN");
-    analogWrite(ENB, 50);
+    analogWrite(ENB, 255);
     digitalWrite(IN3, HIGH);
     digitalWrite(IN4, LOW);
     delay(2000);
@@ -72,7 +72,7 @@ void loop() {
   if (request.indexOf("/door?=0") != -1)  
   {
     Serial.println("Door=CLOSE");
-    analogWrite(ENB, 50);
+    analogWrite(ENB, 255);
     digitalWrite(IN3, LOW);
     digitalWrite(IN4, HIGH);
     delay(2000);
